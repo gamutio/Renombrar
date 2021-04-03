@@ -17,7 +17,7 @@ public class Renombrar {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        crearVentana v = new crearVentana();        
+        crearVentana v = new crearVentana();
     }
     
 }
