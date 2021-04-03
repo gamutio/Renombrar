@@ -102,8 +102,12 @@ public class crearVentana {
         public void actionPerformed( ActionEvent e ){
             String origen = archivo.getRutaInicio() + "\\";
             String nuevaCarpeta = destino.getRutaDestino() + "\\";
-            copia.Copiamos(origen, nuevaCarpeta, nombreFicheros.getText());
-            
+            if(archivo.getRutaInicio() == null || destino.getRutaDestino() == null || nombreFicheros.getText().equals("")){
+                JOptionPane.showMessageDialog(null, "Debes seleccionar todos los parámetros");
+            } else {
+                    copia.Copiamos(origen, nuevaCarpeta, nombreFicheros.getText());
+            }
         }
+            
     }
 }
